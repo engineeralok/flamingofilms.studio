@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+
+:root {
+    --primary-website-color:  #f46e92;
+    --secondry-website-color: #db2c5b;
+    --primary-accent-color: #C55854;
+
+}
+
+/* Utility classes------------------------ */
+.flex{
+    display: flex;
+}
+
+.flex-dir-col{
+    flex-direction: column;
+}
+
+.flex-dir-row{
+    flex-direction: row;
+}
+
+.flex-align-center{
+    align-items: center;
+}
+
+.desktop-width{
+    max-width: 1120px;
+    margin: auto;
+}
+
+/* navbar----------------------------------- */
+nav{
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 10px;
+
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.logo-container{
+    gap: 10px;
+}
+
+.logo{
+    height: 48px;
+    width: 48px;
+    background-color: var(--primary-accent-color);
+}
+
+nav ul{
+    gap: 10px;
+}
+
+nav li{
+    list-style: none;
+}
+
+
