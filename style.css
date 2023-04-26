@@ -14,11 +14,19 @@
     --primary-accent-color: #C55854;
     --primary-text-color: #00011A;
     --secondry-text-color: #92989F;
+    --vibrant-pink: #FF69B4;
+    --bold-orange:  #FFA500;
+    --dark-grey: #444444;
+    --light-grey:#999999;
 
 }
 
 /* Utility classes------------------------ */
 body {
+
+    /* font-family: 'DM Sans', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Pathway Extreme', sans-serif; */
 
     font-family: 'Noto Sans', sans-serif;
 }
@@ -61,6 +69,24 @@ header a {
     text-decoration: none;
 }
 
+header a{
+    color : var(--secondry-website-color);
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Pathway Extreme', sans-serif;
+
+}
+
+nav a{
+    font-size: 16px;
+    font-weight: 700;
+    color: #444444;
+}
+
+nav a:hover{
+    color: var(--secondry-website-color);
+}
+
 .logo-container {
     gap: 10px;
 }
@@ -77,6 +103,19 @@ nav ul {
 
 nav li {
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+#contactus-btn a{
+    border: 1px solid transparent;
+    padding-block: 8px;
+    padding-inline: 24px;
+    background-color: var(--secondry-website-color);
+    color: white;
+    font-weight: 800;
+    border-radius: 25px;
 }
 
 /* Home----------------------------------------------------- */
@@ -88,8 +127,8 @@ nav li {
 }
 
 .home-sec-content-box h1 {
-    font-size: 64px;
-    font-weight: 600;
+    font-size: 48px;
+    font-weight: 900;
     color: var(--primary-text-color);
     /* padding-top: 64px; */
 }
@@ -131,6 +170,15 @@ nav li {
     margin-block: 48px;
 }
 
+.service-section-heading h3{
+    font-family: 'Pathway Extreme', sans-serif;
+}
+
+.service-section-heading h2{
+    font-family: 'DM Sans', sans-serif;
+    
+}
+
 .service-section-cards{
     gap: 50px;
 }
@@ -163,6 +211,9 @@ nav li {
 
 .service-box p{
     padding-block: 16px;
+    font-family: 'DM Sans', sans-serif;
+
+
 }
 
 .service-img{
