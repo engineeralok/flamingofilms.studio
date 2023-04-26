@@ -121,3 +121,50 @@ nav li {
     background-color: #db2c5b;
     height: 91vh;
 }
+
+/* Service-------------------------------------- */
+.service-section{
+    padding-block: 200px;
+}
+
+.service-section-heading{
+    margin-block: 48px;
+}
+
+.service-section-cards{
+    gap: 50px;
+}
+
+.service-box{
+    width: 300px;
+    text-align: center;
+    /* background-color: #C55854; */
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 30px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px;
+    /* width: 300px; */
+    /* height: 200px; */
+    transition: 0.2s;
+}
+
+.service-box:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px 0 rgba(31, 38, 135, 0.1);
+}
+
+.service-box-heading{
+    height: 48px;
+}
+
+
+.service-box p{
+    padding-block: 16px;
+}
+
+.service-img{
+    height: 300px;
+}
