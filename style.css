@@ -1,4 +1,6 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,700&family=Pathway+Extreme:ital@0;1&display=swap');
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,62 +9,115 @@
 /* Variables */
 
 :root {
-    --primary-website-color:  #f46e92;
+    --primary-website-color: #f46e92;
     --secondry-website-color: #db2c5b;
     --primary-accent-color: #C55854;
+    --primary-text-color: #00011A;
+    --secondry-text-color: #92989F;
 
 }
 
 /* Utility classes------------------------ */
-.flex{
+body {
+
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.flex {
     display: flex;
 }
 
-.flex-dir-col{
+.flex-dir-col {
     flex-direction: column;
 }
 
-.flex-dir-row{
+.flex-dir-row {
     flex-direction: row;
 }
 
-.flex-align-center{
+.flex-align-center {
     align-items: center;
 }
 
-.desktop-width{
+.flex-justify-center {
+    justify-content: center;
+}
+
+.desktop-width {
     max-width: 1120px;
     margin: auto;
 }
 
 /* navbar----------------------------------- */
-nav{
+header {
     align-items: center;
     justify-content: space-between;
     padding-block: 10px;
 
 }
 
-nav a{
+nav a,
+header a {
     text-decoration: none;
 }
 
-.logo-container{
+.logo-container {
     gap: 10px;
 }
 
-.logo{
+.logo {
     height: 48px;
     width: 48px;
     background-color: var(--primary-accent-color);
 }
 
-nav ul{
-    gap: 10px;
+nav ul {
+    gap: 40px;
 }
 
-nav li{
+nav li {
     list-style: none;
 }
 
+/* Home----------------------------------------------------- */
 
+.home-sec-content-box {
+    max-width: 50%;
+    height: 91vh;
+    /* background-color: #C55854; */
+}
+
+.home-sec-content-box h1 {
+    font-size: 64px;
+    font-weight: 600;
+    color: var(--primary-text-color);
+    /* padding-top: 64px; */
+}
+
+.home-sec-content-box h2 {
+    font-size: 26px;
+    font-weight: 200;
+    color: var(--secondry-text-color);
+    margin-block: 16px;
+    /* padding-top: 64px; */
+}
+
+.head-btn-box{
+    margin-top: 48px;
+
+}
+
+.head-btn{
+    text-decoration: none;
+    font-weight: 300;
+    color: white;
+    padding-block: 16px;
+    padding-inline: 24px;
+    background-color: var(--primary-website-color);   
+}
+
+.home-sec-illustraion-box {
+    max-width: 50%;
+    background-color: #db2c5b;
+    height: 91vh;
+}
