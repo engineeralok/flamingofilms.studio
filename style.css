@@ -219,3 +219,60 @@ nav li {
 .service-img{
     height: 300px;
 }
+
+.about-us-section {
+    background-color: #101057;
+    padding-top: 20px;
+}
+
+.about-us-section h1 {
+    font-weight: 600;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.about-us-section p {
+    color: #ffffff;
+    font-size: 18x;
+    text-align: center;
+}
+
+.about-img {
+    justify-content: space-between;
+    margin: 50px 70px 0 70px;
+}
+
+.about-img img {
+    width: 200px;
+    height: 200px;
+    border: 8px solid #312D8C;
+    border-radius: 50%;
+}
+
+.big-circle {
+    width: 250px;
+    height: 250px;
+    border: 10px;
+    background-color: #312D8C;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mid-circle {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    background-color: #5F4A88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-1 h4{
+    text-align: center;
+    color: #ffffff;
+    margin-top: 10px;
+
+}
