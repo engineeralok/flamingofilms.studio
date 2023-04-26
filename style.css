@@ -11,6 +11,7 @@
 :root {
     --primary-website-color: #f46e92;
     --secondry-website-color: #db2c5b;
+    --third-website-color: rgb(219, 44, 91);
     --primary-accent-color: #C55854;
     --primary-text-color: #00011A;
     --secondry-text-color: #92989F;
@@ -27,7 +28,9 @@ body {
     /* font-family: 'DM Sans', sans-serif;
 font-family: 'Noto Sans', sans-serif;
 font-family: 'Pathway Extreme', sans-serif; */
-
+    /* background-image: url(./assest/background1.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -74,7 +77,6 @@ header a{
     font-weight: 700;
     font-size: 20px;
     font-family: 'Pathway Extreme', sans-serif;
-
 }
 
 nav a{
@@ -84,6 +86,10 @@ nav a{
 }
 
 nav a:hover{
+    color: var(--secondry-website-color);
+}
+
+#home-btn{
     color: var(--secondry-website-color);
 }
 
@@ -108,14 +114,39 @@ nav li {
     justify-self: center;
 }
 
-#contactus-btn a{
-    border: 1px solid transparent;
+.contactus-btn-box{
+    list-style: none;
+}
+
+.contactus-btn{
+    /* border: 1px solid transparent;
     padding-block: 8px;
     padding-inline: 24px;
     background-color: var(--secondry-website-color);
     color: white;
     font-weight: 800;
+    border-radius: 25px; */
+
+    font-weight: 800;
+    text-decoration: none;
+    background-color: rgba(222, 20, 74, 0.856);
+    border: none;
     border-radius: 25px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    color: #ffffff;
+    cursor: pointer;
+    /* font-size: 20px; */
+    padding: 10px 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.contactus-btn:hover {
+    /* background-color: var(--vibrant-pink); */
+
+    background-color: rgba(222, 20, 74, 0.9);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+    color: #ffffff;
+    transform: translateY(-5px);
 }
 
 /* Home----------------------------------------------------- */
@@ -137,22 +168,31 @@ nav li {
     font-size: 26px;
     font-weight: 200;
     color: var(--secondry-text-color);
-    margin-block: 16px;
+    margin-top: 16px;
+    margin-bottom: 24px;
     /* padding-top: 64px; */
 }
 
-.head-btn-box{
-    margin-top: 48px;
-
+.contactus-btn2{
+    font-weight: 800;
+    text-decoration: none;
+    background-color: rgba(222, 20, 74, 0.856);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    color: #ffffff;
+    cursor: pointer;
+    /* font-size: 20px; */
+    padding: 10px 20px;
+    transition: all 0.3s ease 0s;
+    display:inline-block;
 }
 
-.head-btn{
-    text-decoration: none;
-    font-weight: 300;
-    color: white;
-    padding-block: 16px;
-    padding-inline: 24px;
-    background-color: var(--primary-website-color);   
+.contactus-btn2:hover{
+    background-color: rgba(222, 20, 74, 0.856);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+    color: #ffffff;
+    transform: translateY(-5px);
 }
 
 .home-sec-illustraion-box {
@@ -167,7 +207,8 @@ nav li {
 }
 
 .service-section-heading{
-    margin-block: 48px;
+    margin-top: 48px;
+    margin-bottom: 80px;
 }
 
 .service-section-heading h3{
