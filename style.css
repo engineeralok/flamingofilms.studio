@@ -28,7 +28,7 @@ body {
     /* font-family: 'DM Sans', sans-serif;
 font-family: 'Noto Sans', sans-serif;
 font-family: 'Pathway Extreme', sans-serif; */
-    /* background-image: url(./assest/background1.jpg); */
+    background-image: url(./assest/background3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Noto Sans', sans-serif;
@@ -368,6 +368,14 @@ nav li {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 20px;
+    transition: 0.2s ease-in-out;
+  }
+
+  .feature-items:hover{
+    box-shadow: 0 8px 30px 0 rgba(31, 38, 135, 0.37);
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 20px 0 rgba(31, 38, 135, 0.1);
   }
   
   .feature-icon {
