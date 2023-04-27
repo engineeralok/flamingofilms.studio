@@ -157,6 +157,10 @@ nav li {
     /* background-color: #C55854; */
 }
 
+.home-sec-content-box{
+    justify-content: center;
+}
+
 .home-sec-content-box h1 {
     font-size: 48px;
     font-weight: 900;
@@ -174,6 +178,7 @@ nav li {
 }
 
 .contactus-btn2{
+    margin-block: 32px;
     font-weight: 800;
     text-decoration: none;
     background-color: rgba(222, 20, 74, 0.856);
@@ -261,9 +266,11 @@ nav li {
     height: 300px;
 }
 
+/* about us section------------------------------------- */
+
 .about-us-section {
     background-color: #101057;
-    padding-top: 20px;
+    padding-block: 200px;
 }
 
 .about-us-section h1 {
