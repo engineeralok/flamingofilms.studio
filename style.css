@@ -70,7 +70,7 @@ header {
     box-shadow: 0 5px 15px 0 rgba(31, 38, 135, 0.1);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    border-top-left-radius: 0 ;
+    border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -79,23 +79,22 @@ header {
     padding-block: 2px;
 }
 
-.header-box{
+.header-box {
     align-items: center;
     justify-content: space-between;
     padding-block: 10px;
 }
 
-nav a,
-header a {
+nav a{
     text-decoration: none;
 }
 
-header a {
+/* header a {
     color: var(--secondry-website-color);
     font-weight: 700;
     font-size: 20px;
     font-family: 'Pathway Extreme', sans-serif;
-}
+} */
 
 nav a {
     font-size: 16px;
@@ -119,6 +118,14 @@ nav a:hover {
     height: 48px;
     width: 48px;
     background-color: var(--primary-accent-color);
+}
+
+.logo-container a{
+    color: var(--secondry-website-color);
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Pathway Extreme', sans-serif;
+    text-decoration: none;
 }
 
 nav ul {
@@ -381,11 +388,11 @@ nav li {
 
 /* work-section-bottom */
 
-.work-section-bottom{
+.work-section-bottom {
     height: 100vh;
 }
 
-.work-sec-bottom-heading{
+.work-sec-bottom-heading {
     padding-bottom: 100px;
 }
 
@@ -399,7 +406,7 @@ nav li {
 
 
 
-.work-card{
+.work-card {
     text-align: center;
     /* background-color: #C55854; */
     /* background-color: rgba(255, 255, 255, 0.2); */
@@ -413,12 +420,12 @@ nav li {
     box-shadow: 0 5px 20px 0 rgba(31, 38, 135, 0.1);
     padding: 20px;
     width: 350px;
-/* height: 200px; */
+    /* height: 200px; */
     transition: 0.2s;
 
 }
 
-.work-card:hover{
+.work-card:hover {
     /* transform: scale(1.02); */
     transform: translateY(-15px);
     box-shadow: 0 5px 20px 0 rgba(31, 38, 135, 0.299);
@@ -427,7 +434,7 @@ nav li {
 }
 
 
-.work-card-icon{
+.work-card-icon {
     top: -35px;
     position: absolute;
     background-color: white;
@@ -437,20 +444,90 @@ nav li {
 }
 
 
-.work-card-icon i{
+.work-card-icon i {
     font-size: 30px;
     color: var(--third-website-color);
     padding: 20px;
 
 }
 
-.work-card-description{
+.work-card-description {
     padding-block: 30px;
 }
 
-.work-card-description h3{
+.work-card-description h3 {
     padding-bottom: 5px;
 }
 
 
+/* contactus----------------------------- */
 
+.contactus-box {
+    padding-block: 48px;
+}
+
+.contactus-header h2 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--primary-website-color);
+}
+
+.contactus-header p{
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 700;
+    color: var(--third-website-color);
+}
+
+
+
+.contactus-info {
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* box-shadow: 0 8px 30px 0 rgba(31, 38, 135, 0.37); */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    /* border: 1px solid rgba(154, 149, 149, 0.39); */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 5px 20px 0 rgba(31, 38, 135, 0.1);
+    padding: 50px;
+}
+
+.contactus-info h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.contactus-info li {
+    list-style: none;
+    padding-block: 5px;
+    font-size: 16px;
+}
+
+.contactus-info li a {
+    padding-block: 12px;
+}
+
+/* footer ------------------------------------- */
+
+footer{
+    padding-block: 48px;
+    padding-inline: 48px;
+}
+
+.footer-top{
+    padding-block: 10px;
+}
+
+.footer-bottom{
+    font-size: 14px;
+    padding: 20px;
+    background-color: rgba(255, 143, 227, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+}
