@@ -23,6 +23,10 @@
 }
 
 /* Utility classes------------------------ */
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
 
     /* font-family: 'DM Sans', sans-serif;
@@ -60,6 +64,30 @@ font-family: 'Pathway Extreme', sans-serif; */
     margin: auto;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    
+}
+
+::-webkit-scrollbar-track {
+    /* background: transparent; */
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    /* background-color: #606060; */
+    background-color: #404040;
+    border-radius: 15px;
+    border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--secondry-website-color);
+
+    /* background-color: transparent; */
+}
+
+
 /* navbar----------------------------------- */
 header {
     width: 100%;
@@ -85,7 +113,7 @@ header {
     padding-block: 10px;
 }
 
-nav a{
+nav a {
     text-decoration: none;
 }
 
@@ -120,7 +148,7 @@ nav a:hover {
     background-color: var(--primary-accent-color);
 }
 
-.logo-container a{
+.logo-container a {
     color: var(--secondry-website-color);
     font-weight: 700;
     font-size: 20px;
@@ -473,7 +501,7 @@ nav li {
     color: var(--primary-website-color);
 }
 
-.contactus-header p{
+.contactus-header p {
     margin: 10px 0 0 0;
     padding: 0;
     font-size: 38px;
@@ -515,19 +543,25 @@ nav li {
 
 /* footer ------------------------------------- */
 
-footer{
+footer {
     padding-block: 48px;
     padding-inline: 48px;
 }
 
-.footer-top{
+.footer-top {
     padding-block: 10px;
 }
 
-.footer-bottom{
+.footer-bottom {
     font-size: 14px;
-    padding: 20px;
-    background-color: rgba(255, 143, 227, 0.1);
+    padding: 10px;
+    color: white;
+    background-color: #50071b;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(10px);
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: white;
 }
