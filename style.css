@@ -70,23 +70,31 @@ font-family: 'Pathway Extreme', sans-serif; */
 }
 
 ::-webkit-scrollbar-track {
-    /* background: transparent; */
-    background: #f1f1f1;
+    background: #f1f1f100;
 }
 
 ::-webkit-scrollbar-thumb {
-    /* background-color: #606060; */
     background-color: #404040;
     border-radius: 15px;
-    border: 3px solid #f1f1f1;
+    border: 2px solid #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--secondry-website-color);
-
-    /* background-color: transparent; */
 }
 
+
+/* .reveal{
+    position : relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+} */
 
 /* navbar----------------------------------- */
 header {
@@ -203,10 +211,15 @@ nav li {
 }
 
 /* Home----------------------------------------------------- */
+.home-section{
+    /* margin-top: 100px; */
+    height: 91vh;
+    align-items: center;
+    justify-content: center;
 
+}
 .home-sec-content-box {
     max-width: 50%;
-    height: 91vh;
     /* background-color: #C55854; */
 }
 
@@ -256,12 +269,12 @@ nav li {
 .home-sec-illustraion-box {
     max-width: 50%;
     background-color: #db2c5b;
-    height: 91vh;
+    height: 80vh;
 }
 
 /* Service-------------------------------------- */
 .service-section {
-    padding-block: 200px;
+    padding-block: 100px;
 }
 
 .service-section-heading {
@@ -282,9 +295,13 @@ nav li {
     gap: 50px;
 }
 
-.service-box {
+.service-box-container{
     width: 300px;
     text-align: center;
+}
+
+.service-box {
+   
     /* background-color: #C55854; */
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 30px 0 rgba(31, 38, 135, 0.37);
@@ -294,13 +311,13 @@ nav li {
     border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 20px;
     /* width: 300px; */
-    /* height: 200px; */
+    /* height: 700px; */
     transition: 0.2s;
 }
 
 .service-box:hover {
-    transform: scale(1.1);
-    box-shadow: 0 5px 20px 0 rgba(31, 38, 135, 0.1);
+    transform: scale(1.1) !important;
+    box-shadow: 0 5px 20px 0 rgba(31, 38, 135, 0.1) !important;
 }
 
 .service-box-heading {
