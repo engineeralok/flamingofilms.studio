@@ -25,7 +25,7 @@
 /* Utility classes------------------------ */
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
 
@@ -66,7 +66,7 @@ font-family: 'Pathway Extreme', sans-serif; */
 
 ::-webkit-scrollbar {
     width: 10px;
-    
+
 }
 
 ::-webkit-scrollbar-track {
@@ -74,7 +74,7 @@ font-family: 'Pathway Extreme', sans-serif; */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #404040;
+    background-color: var(--primary-website-color);
     border-radius: 15px;
     border: 2px solid #f1f1f1;
 }
@@ -99,11 +99,11 @@ font-family: 'Pathway Extreme', sans-serif; */
 /* navbar----------------------------------- */
 header {
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
-    background-color: #fff1f4f7;
-    box-shadow: 0 5px 15px 0 rgba(31, 38, 135, 0.1);
+    /* background-color: #fff1f4f7; */
+    /* box-shadow: 0 5px 15px 0 rgba(31, 38, 135, 0.1); */
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border-top-left-radius: 0;
@@ -113,12 +113,25 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.18);
     z-index: 2;
     padding-block: 2px;
+    background-color: transparent;
+    transition: 1s ease;
+    z-index: 999;
+}
+
+.navbar.scrolled {
+  background-color: #ffffff; 
+  /* Set your desired background color */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Set your desired box shadow */
+    box-shadow: 0 5px 15px 0 rgba(31, 38, 135, 0.1);
+    /* background-color: #fff1f4f7; */
+
+
 }
 
 .header-box {
     align-items: center;
     justify-content: space-between;
-    padding-block: 10px;
+    padding-block: 3px;
 }
 
 nav a {
@@ -148,13 +161,18 @@ nav a:hover {
 
 .logo-container {
     gap: 10px;
+    overflow: hidden;
 }
 
-.logo {
-    height: 48px;
-    width: 48px;
-    background-color: var(--primary-accent-color);
+.logo img{
+    /* height: 64px; */
+    width: 72px;
+    height: 100%;
+    overflow: hidden;
+    /* background-color: var(--primary-accent-color); */
 }
+
+
 
 .logo-container a {
     color: var(--secondry-website-color);
@@ -211,13 +229,15 @@ nav li {
 }
 
 /* Home----------------------------------------------------- */
-.home-section{
+.home-section {
     /* margin-top: 100px; */
     height: 91vh;
     align-items: center;
     justify-content: center;
+    margin-top: 48px;
 
 }
+
 .home-sec-content-box {
     max-width: 50%;
     /* background-color: #C55854; */
@@ -295,13 +315,13 @@ nav li {
     gap: 50px;
 }
 
-.service-box-container{
+.service-box-container {
     width: 300px;
     text-align: center;
 }
 
 .service-box {
-   
+
     /* background-color: #C55854; */
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 30px 0 rgba(31, 38, 135, 0.37);

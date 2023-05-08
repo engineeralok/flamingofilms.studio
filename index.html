@@ -17,11 +17,11 @@
 
     <!-- navbar-------------------------------- -->
 
-    <header>
+    <header class="navbar">
         <div class="header-box flex flex-dir-row desktop-width home">
             <div class="logo-container flex flex-dir-row flex-align-center">
-                <div class="logo">
-
+                <div class="logo flex flex-align-center flex-justify-center">
+                    <img src="./assest/Flamingo_Logo3.png" alt="Flamingo Films Studio Logo">
                 </div>
                 <a href="#">Flamingo Films Studio</a>
             </div>
@@ -57,11 +57,11 @@
                 </div>
             </div>
 
-            <div class="home-sec-illustraion-box" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">
+            <!-- <div class="home-sec-illustraion-box" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo recusandae voluptates, molestiae
                     voluptate consequuntur minima ab laudantium ducimus earum! Dolor eius hic consectetur voluptates
                     praesentium, aspernatur odit dicta cumque repudiandae.</p>
-            </div>
+            </div> -->
         </section>
 
         <!-- Service ---------------------------------->
@@ -434,7 +434,7 @@
         </div>
 
         <div class="credits">
-            Designed by <a href="">Alok</a> and <a href="">Khushi</a>
+            Designed by <a href="">Alok</a>
         </div>
     </div>
     </footer>
@@ -483,6 +483,27 @@
 
     </script> -->
 
+    <script>
+        window.addEventListener('scroll', function () {
+            var navbar = document.querySelector('.navbar');
+            var scrolled = window.scrollY > 0;
+            navbar.classList.toggle('scrolled', scrolled);
+        });
+
+        // window.addEventListener('scroll', function () {
+        //     var navbar = document.querySelector('.navbar');
+        //     var scrolled = window.scrollY > 0;
+        //     navbar.classList.toggle('scrolled', scrolled);
+
+        //     if (scrolled) {
+        //         navbar.classList.add('fade-down');
+        //     } else {
+        //         navbar.classList.remove('fade-down');
+        //     }
+        // });
+
+
+    </script>
 
     <script src="https://kit.fontawesome.com/01b8eed51c.js" crossorigin="anonymous"></script>
 
