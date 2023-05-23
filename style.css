@@ -108,8 +108,8 @@ header {
     -webkit-backdrop-filter: blur(15px);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    /* border-bottom-left-radius: 10px; */
+    /* border-bottom-right-radius: 10px; */
     border: 1px solid rgba(255, 255, 255, 0.18);
     z-index: 2;
     padding-block: 2px;
@@ -166,7 +166,7 @@ nav a:hover {
 
 .logo img{
     /* height: 64px; */
-    width: 72px;
+    width: 66px;
     height: 100%;
     overflow: hidden;
     /* background-color: var(--primary-accent-color); */
