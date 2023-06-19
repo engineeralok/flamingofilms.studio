@@ -29,14 +29,22 @@ html {
 
 body {
 
-    /* font-family: 'DM Sans', sans-serif;
-font-family: 'Noto Sans', sans-serif;
-font-family: 'Pathway Extreme', sans-serif; */
-    /* background-image: url(./assest/background1.jpg); */
-    background-repeat: no-repeat;
+    font-family: 'DM Sans', sans-serif;
+/* font-family: 'Noto Sans', sans-serif; */
+/* font-family: 'Pathway Extreme', sans-serif; */
+    /* background-image: url(./assest/bg.png); */
+    /* background-repeat: no-repeat; */
     background-size: cover;
+    background-position: fill;
     font-family: 'Noto Sans', sans-serif;
-    background-color: #cff0f02f;
+    /* background-color: #cff0f02f; */
+}
+
+body p{
+    /* color: #555; */
+    font-family: 'Noto Sans', sans-serif;
+    color: #777;
+    font-weight: 450;
 }
 
 .flex {
@@ -60,12 +68,13 @@ font-family: 'Pathway Extreme', sans-serif; */
 }
 
 .desktop-width {
-    max-width: 1120px;
+    max-width: 1200px;
     margin: auto;
 }
 
 ::-webkit-scrollbar {
     width: 10px;
+    background-color: transparent;
 
 }
 
@@ -76,12 +85,26 @@ font-family: 'Pathway Extreme', sans-serif; */
 ::-webkit-scrollbar-thumb {
     background-color: var(--primary-website-color);
     border-radius: 15px;
-    border: 2px solid #f1f1f1;
+    border: 2px solid transparent;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--secondry-website-color);
 }
+
+/* ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #c9c8c8;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #b3b2b2;
+  } */
 
 
 /* .reveal{
@@ -110,11 +133,12 @@ header {
     border-top-right-radius: 0;
     /* border-bottom-left-radius: 10px; */
     /* border-bottom-right-radius: 10px; */
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
+    border: 1px solid transparent;
     z-index: 2;
     padding-block: 2px;
     background-color: transparent;
-    transition: 1s ease;
+    transition: 0.5s ease;
     z-index: 999;
 }
 
@@ -198,14 +222,6 @@ nav li {
 }
 
 .contactus-btn {
-    /* border: 1px solid transparent;
-    padding-block: 8px;
-    padding-inline: 24px;
-    background-color: var(--secondry-website-color);
-    color: white;
-    font-weight: 800;
-    border-radius: 25px; */
-
     font-weight: 800;
     text-decoration: none;
     background-color: rgba(222, 20, 74, 0.856);
@@ -231,10 +247,10 @@ nav li {
 /* Home----------------------------------------------------- */
 .home-section {
     /* margin-top: 100px; */
-    height: 91vh;
+    height: 760px;
     align-items: center;
     justify-content: center;
-    margin-top: 48px;
+    padding-top: 120px;
 
 }
 
@@ -288,26 +304,37 @@ nav li {
 
 .home-sec-illustraion-box {
     max-width: 50%;
-    background-color: #db2c5b;
-    height: 80vh;
+    /* background-color: #db2c5b; */
+    /* height: 80vh; */
+}
+
+.home-sec-illustraion-box img{
+    width: 100%;
 }
 
 /* Service-------------------------------------- */
 .service-section {
-    padding-block: 100px;
+    padding-block: 50px;
+    /* height: 91vh; */
 }
 
 .service-section-heading {
     margin-top: 48px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
+    padding-top: 20px;
+    /* padding-block: 20px; */
 }
 
 .service-section-heading h3 {
     font-family: 'Pathway Extreme', sans-serif;
+    color: var(--primary-website-color);
 }
 
 .service-section-heading h2 {
     font-family: 'DM Sans', sans-serif;
+    color: var(--third-website-color);
+    font-size: 38px;
+    font-weight: 700;
 
 }
 
@@ -348,42 +375,64 @@ nav li {
 .service-box p {
     padding-block: 16px;
     font-family: 'DM Sans', sans-serif;
-
+    font-weight: 450;
 
 }
 
 .service-img {
-    height: 300px;
+    height: 170px;
+    width: 210px;
+}
+
+.service-img img {
+    width: 100%;
 }
 
 /* about us section------------------------------------- */
 
 .about-us-section {
-    background-color: #101057;
-    padding-block: 200px;
+    /* background-color: #101057; */
+    padding-top: 130px;
+    padding-bottom: 70px;
 }
 
-.about-us-section h1 {
-    font-weight: 600;
-    font-size: 35px;
-    color: #ffffff;
+.about-heading{
+    padding-top: 40px;
+}
+
+.about-us-section h3 {
+    padding-block: 10px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--third-website-color);
+    font-size: 38px;
+    font-weight: 700;
+    /* color: #ffffff; */
 }
 
 .about-us-section p {
-    color: #ffffff;
+    /* color: #ffffff; */
     font-size: 18x;
     text-align: center;
 }
 
 .about-img {
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 50px 70px 0 70px;
+    column-gap: 64px;
+}
+
+.img-1{
+    width: 300px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-img img {
     width: 200px;
     height: 200px;
-    border: 8px solid #312D8C;
+    border: var(--primary-website-color);
     border-radius: 50%;
 }
 
@@ -391,7 +440,8 @@ nav li {
     width: 250px;
     height: 250px;
     border: 10px;
-    background-color: #312D8C;
+    /* background-color: var(--bold-orange); */
+    background-color: #a51449;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -403,7 +453,7 @@ nav li {
     width: 225px;
     height: 225px;
     border-radius: 50%;
-    background-color: #5F4A88;
+    background-color: var(--third-website-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -411,34 +461,67 @@ nav li {
 
 .img-1 h4 {
     text-align: center;
-    color: #ffffff;
+    /* color: #ffffff; */
     margin-top: 10px;
 
 }
+
+.co-heading{
+    font-size: 20px;
+    margin-block: 2px;
+    font-weight: 700;
+    /* color: var(--third-website-color); */
+}
+
+.co{
+    color: #999;
+}
+
+.co-desc{
+    margin-top: 10px;
+    /* font-family: 'DM Sans', sans-serif; */
+    /* font-family: 'Noto Sans', sans-serif; */
+    
+}
+
 
 /* Work Section------------------------------- */
 
 /* work-section-top */
 
 .work-section-top {
-    height: 110vh;
-    /* padding-block: 0px; */
+    /* margin-top: 50px; */
+    padding-block: 50px;
+    margin-bottom: 90px;
+
+    /* height: 91vh; */
+
 }
 
 .work-sec-img {
-    background-color: #312D8C;
-    height: 400px;
+    /* background-color: #312D8C; */
+    /* height: 400px; */
     width: 50%;
+    padding-block: 80px;
+}
+
+.work-sec-img img{
+    width: 100%
 }
 
 .work-sec-heading {
     width: 50%;
 }
 
-.work-sec-heading h1 {
-    font-size: 48px;
+.work-sec-heading h3 {
+     font-size: 64px;
     font-weight: 900;
     color: var(--primary-text-color);
+    /* padding-block: 10px; */
+    font-family: 'DM Sans', sans-serif;
+    /* color: var(--third-website-color); */
+    /* font-size: 38px; */
+    font-weight: 700;
 }
 
 .work-sec-heading p {
@@ -454,11 +537,21 @@ nav li {
 /* work-section-bottom */
 
 .work-section-bottom {
-    height: 100vh;
+    height: 800px;
 }
 
 .work-sec-bottom-heading {
-    padding-bottom: 100px;
+    padding-bottom: 60px;
+    margin-bottom: 10px;
+    
+}
+
+.work-sec-bottom-heading h3{
+    padding-block: 10px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--third-website-color);
+    font-size: 38px;
+    font-weight: 700;
 }
 
 .work-sec-cards {
@@ -469,10 +562,14 @@ nav li {
 
 }
 
+.work-card-container{
+    width: 350px;
+    max-height: 250px;
+    text-align: center;
+}
 
 
 .work-card {
-    text-align: center;
     /* background-color: #C55854; */
     /* background-color: rgba(255, 255, 255, 0.2); */
     background-color: rgba(255, 255, 255, 0.1);
@@ -484,8 +581,7 @@ nav li {
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 5px 20px 0 rgba(31, 38, 135, 0.1);
     padding: 20px;
-    width: 350px;
-    /* height: 200px; */
+    height: 220px;
     transition: 0.2s;
 
 }
@@ -516,6 +612,13 @@ nav li {
 
 }
 
+.work-card-icon img {
+    width: 80px;
+    /* color: var(--third-website-color); */
+    padding: 10px;
+
+}
+
 .work-card-description {
     padding-block: 30px;
 }
@@ -529,6 +632,9 @@ nav li {
 
 .contactus-box {
     padding-block: 48px;
+    margin-bottom: 20px;
+
+    /* height: 600px; */
 }
 
 .contactus-header h2 {
@@ -582,11 +688,12 @@ nav li {
 
 footer {
     padding-block: 48px;
-    padding-inline: 48px;
+    /* padding-inline: 48px; */
 }
 
 .footer-top {
     padding-block: 10px;
+    justify-content: space-evenly;
 }
 
 .footer-bottom {
@@ -594,6 +701,7 @@ footer {
     padding: 10px;
     color: white;
     background-color: #50071b;
+    /* background-color: #4a0025; */
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(10px);
 }
