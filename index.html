@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=0.5"> -->
+    <meta name="description" content="Creating visually stunning content that resonates">
+    <meta name="keywords" content="Flamingo Films, flamingofilms, flamingofilms.studio,flamigo flims studio">
     <title>Flamingo Films Studio</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="responsive.css">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -25,16 +31,21 @@
                 </div>
                 <a href="#">Flamingo Films Studio</a>
             </div>
-            <nav>
-                <div>
+            <nav class="flex flex-dir-row">
+                <div class="nav-links" id="nav-links">
                     <ul class="flex flex-dir-row">
-                        <li><a id="home-btn" href="#home">Home</a></li>
-                        <li><a href="#service">Services</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contactus">Contact</a></li>
-                        <li><a class="contactus-btn" href="#">Get In Touch</a></li>
+                        <li><a class="hover-link" id="home-btn" href="#home">Home</a></li>
+                        <li><a class="hover-link" href="#service">Services</a></li>
+                        <li><a class="hover-link" href="#about">About</a></li>
+                        <li><a class="hover-link" href="#contactus">Contact</a></li>
+                        <li><a class="hover-link contactus-btn" href="#">Get In Touch</a></li>
                     </ul>
                 </div>
+
+                <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                    <!-- <div style="height: 20px; width: 20px; background-color: blueviolet;"></div> -->
+                </a>
             </nav>
         </div>
     </header>
@@ -45,14 +56,14 @@
         <!-- Home  ---------------------------------->
         <section id="home" class="home-section flex flex-dir-row desktop-width">
             <div class="home-sec-content-box flex flex-dir-col">
-                <h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">
                     Creating visually stunning content that resonates
                 </h1>
-                <h2 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <h2 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true">
                     We help brands and creators unleash the full potential of social media to grow their presence,
                     reach, and impact.
                 </h2>
-                <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000" data-aos-once="true">
                     <a class="contactus-btn2" href="#get_into_it"><span>Get insights into</span></a>
                 </div>
             </div>
@@ -447,6 +458,7 @@
                         <li><a href="">dhananjay@flamingofilms.studio</a></li>
                     </ul>
                 </div>
+
                 <div class="contactus-img">
 
                 </div>
@@ -472,7 +484,7 @@
                     <a href="#">Flamingo Films Studio</a>
                 </div>
 
-                
+
             </div>
 
     </main>
@@ -556,7 +568,45 @@
         //     }
         // });
     </script>
-    
+
+    <script>
+        // const toggleButton = document.getElementById('nav-toggle');
+        // const navLinks = document.getElementById('nav-links');
+
+        // toggleButton.addEventListener('click', () => {
+        //     navLinks.classList.toggle('active');
+        //     // event.preventDefault();
+        // })
+
+        // document.querySelector('#nav-toggle').addEventListener('click', function (event) {
+        //     event.preventDefault();
+        // });
+
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent the default behavior of scrolling to the top
+            navLinks.classList.toggle('active');
+        });
+
+        // Hide the navigation menu and scroll to the clicked section
+        const navItems = document.querySelectorAll('.nav-links ul li a');
+
+        navItems.forEach((navItem) => {
+            navItem.addEventListener('click', (event) => {
+                event.preventDefault(); // Prevent the default behavior of scrolling to the section
+                navLinks.classList.remove('active');
+
+                // Scroll to the clicked section
+                const targetId = navItem.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+
+    </script>
 
     <script src="https://kit.fontawesome.com/01b8eed51c.js" crossorigin="anonymous"></script>
 
