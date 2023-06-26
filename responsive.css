@@ -215,6 +215,9 @@
     /* contactus------------------------------------- */
     .contactus {
         width: 90%;
+    padding-top: 30px; 
+
+        
     }
 
     /* footer-top------------------------------ */
@@ -225,6 +228,10 @@
 }
 
 @media screen and (max-width:767px) {
+    .body{
+        max-width: 100%;
+        margin: 0 auto;
+    }
 
     .logo-container a {
         font-size: 28px;
@@ -362,7 +369,6 @@
 
     .img-1 {
         width: 85%;
-
     }
 
     .about-img img {
@@ -486,7 +492,10 @@
     }
 
     /* contactus--------------------------- */
-
+    .contactus{
+        padding-top:0; 
+    }
+    
     .contactus-header h2 {
         font-size: 1.5rem;
     }
@@ -771,13 +780,220 @@
 
 
 @media screen and (max-width: 479px) {
-    .desktop-width {
-        max-width: 98%;
+    .logo-container a{
+        font-size: 16px;
+    }
+
+    .home-section{
+        padding-top: 80px;
+        /* padding-bottom: 0; */
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .home-sec-content-box h1 {
+        font-size: 1.7rem;
+        margin-top: 24px;
+    }
+
+    .home-sec-content-box h2 {
+        font-size: 1.0rem;
+        padding-bottom: 0px;
+        margin-bottom: 5px;
+        margin-top: 24px;
+    }
+
+    .contactus-btn2{
+        margin-block: 24px;
+        padding-block: 16px;
+        font-size: 0.9rem;
+    }
+
+    .service-section{
+        padding-block: 0px;
+        margin-top: 0;
+        padding-top: 34px;
+        margin-bottom: 0;
+        padding-bottom: 0;
         width: 100%;
     }
 
-    header {
+    .service-section-heading{
+        margin-top: 0;
+        padding-bottom: 10px;
+        margin-bottom: 18px;
+    }
+
+    .service-section-heading h3 {
+        font-size: 1.0rem;
+    }
+
+    .service-section-heading h2 {
+        font-size: 1.1rem;
+    }
+
+    .service-box-container{
+        max-width: 100%;
         width: 100%;
+    }
+
+    .service-box{
+      padding-block: 14px;  
+    }
+
+    .service-box-heading{
+        padding-top: 20px;
+        padding-bottom: 5px;
+
+    }
+
+    .service-box-heading h3 {
+        font-size: 1.4rem;
+    }
+
+    .service-box p {
+        font-size: 1.0rem;
+    }
+
+    .service-section-cards{
+        gap: 24px;
+    }
+
+    .about-us-section{
+        margin-top: 0;
+        padding-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+
+    .about-heading h3 {
+        font-size: 1.4rem;
+    }
+
+    .about-heading p {
+        font-size: 0.9rem;
+    }
+
+    .about-img  {
+        max-width: 100%;
+        width: 100%;
+        margin-inline: auto;
+        margin-top: 28px;
+        gap:48px;
+    }
+
+    .img-1 {
+        width: 100%;
+    }
+
+    .co-heading {
+        font-size: 1.4rem;
+        margin-bottom: 3px;
+    }
+
+    .co {
+        font-size: 1.2rem;
+    }
+
+    .co-desc {
+        font-size: 0.9rem;
+    }
+
+    .work-section-top {
+        margin-top: 0px;
+        padding-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .work-sec-img{
+        margin-top: 64px;
+        margin-bottom: 20px;
+        padding-block: 0;
+    }
+
+    .work-sec-heading h3 {
+        font-size: 1.7rem;
+    }
+
+    .work-sec-heading p {
+        font-size: 0.9rem;
+    }
+
+    .work-sec-bottom-heading h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .work-sec-cards{
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .work-card-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .work-card-icon {
+        top: -13%;
+        left: 10vw;
+        height: auto;
+        width: 20%;
+    }
+
+    .word-card-description {
+        padding-inline: 20px;
+        padding-block: 0;
+
+    }
+
+    .work-card-description h3 {
+        padding-top: 5px;
+        padding-bottom: 10px;
+        font-size: 1.4rem;
+    }
+    .work-card-description p {
+        font-size: 0.9rem;
+    }
+
+    .contactus-header h2 {
+        font-size: 1.0rem;
+    }
+
+    .contactus-header p {
+        font-size: 1.7rem;
+    }
+
+    .contactus-info {
+        width: 100%;
+        margin: 0;
+        padding: 40px 20px;
+    }
+
+    .contactus-info h3 {
+        font-size: 1.2rem;
+        margin: 10px 0;
+
+    }
+
+    .contactus-info li {
+        font-size: 0.9rem;
+    }
+    .footer-top h3 {
+        font-size: 1.2rem;
+    }
+
+    .footer-top a {
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+
+        font-size: 0.5rem;
     }
 
 }

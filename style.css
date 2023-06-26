@@ -127,31 +127,20 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    /* background-color: #fff1f4f7; */
-    /* box-shadow: 0 5px 15px 0 rgba(31, 38, 135, 0.1); */
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    /* border-bottom-left-radius: 10px; */
-    /* border-bottom-right-radius: 10px; */
-    /* border: 1px solid rgba(255, 255, 255, 0.18); */
     border: 1px solid transparent;
     z-index: 2;
     padding-block: 2px;
     background-color: transparent;
     transition: 0.5s ease;
-    /* z-index: 999; */
 }
 
 .navbar.scrolled {
-    background-color: #ffffff;
-    /* Set your desired background color */
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Set your desired box shadow */
+    background-color: #ffffffb5;
     box-shadow: 0 5px 15px 0 rgba(31, 38, 135, 0.1);
-    /* background-color: #fff1f4f7; */
-
-
 }
 
 .header-box {
@@ -187,9 +176,14 @@ nav a:hover {
     display: none;
 }
 
-#home-btn {
+nav a.active {
     color: var(--secondry-website-color);
-}
+  }
+  
+
+/* #home-btn {
+    color: var(--secondry-website-color);
+} */
 
 .logo-container {
     gap: 10px;
@@ -655,6 +649,10 @@ nav li {
 
 
 /* contactus----------------------------- */
+.contactus{
+    padding-top: 90px; 
+}
+
 
 .contactus-box {
     padding-block: 48px;
