@@ -185,6 +185,11 @@ nav a.active {
     color: var(--secondry-website-color);
 } */
 
+nav i{
+    color: var(--third-website-color);
+    /* font-size: 10px; */
+}
+
 .logo-container {
     gap: 10px;
     overflow: hidden;
