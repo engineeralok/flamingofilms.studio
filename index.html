@@ -41,7 +41,8 @@
                         <li><a class="hover-link" href="#service">Services</a></li>
                         <li><a class="hover-link" href="#about">About</a></li>
                         <li><a class="hover-link" href="#contactus">Contact</a></li>
-                        <li><a class="hover-link contactus-btn" href="#">Get In Touch</a></li>
+                        <li><a class="hover-link contactus-btn" href="https://forms.gle/Zy2ip7gxEfPUX7KT6"
+                                target="_blank">Get In Touch</a></li>
                     </ul>
                 </div>
 
@@ -562,6 +563,19 @@
         });
 
     </script> -->
+
+    <script>
+        // Select the "Get In Touch" button
+        const getInTouchButton = document.querySelector('.contactus-btn');
+
+        // Add an event listener to the button
+        getInTouchButton.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent the default behavior of the button
+
+            // Open the link in a new tab
+            window.open(getInTouchButton.getAttribute('href'), '_blank');
+        });
+    </script>
 
     <script>
         window.addEventListener('scroll', function () {
