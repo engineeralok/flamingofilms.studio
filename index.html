@@ -101,7 +101,35 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("load", function () {
     hideSplashScreen();
   });
+
+  
     </script>
+    <script>
+        window.onload = function () {
+          const hasVisitedBefore = localStorage.getItem("hasVisited");
+          const splashScreen = document.getElementById("splashScreen");
+      
+          // Function to hide the splash screen
+          function hideSplashScreen() {
+            splashScreen.style.display = "none";
+          }
+      
+          if (!hasVisitedBefore) {
+            // If the user has not visited before, show the splash screen
+            splashScreen.style.display = "flex";
+      
+            // Set the flag in local storage to indicate that the user has visited
+            localStorage.setItem("hasVisited", "true");
+      
+            // Hide the splash screen after 1.5 seconds
+            setTimeout(hideSplashScreen, 1500);
+          } else {
+            // If the user has visited before, hide the splash screen immediately
+            hideSplashScreen();
+          }
+        };
+      </script>
+      
 
 
 </head>
