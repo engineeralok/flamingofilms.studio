@@ -150,7 +150,7 @@ CSS for the splash screen
     height: 100%;
     background-color: #db2c5c; /* Filling the loading bar with the color #db2c5c */
     border-radius: 5px;
-    animation: loadingAnimation 3s infinite;
+    animation: loadingAnimation 2.5s ease-in-out;
   }
   
   @keyframes loadingAnimation {
