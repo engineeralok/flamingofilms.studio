@@ -18,7 +18,7 @@
 
     <link rel="icon" type="image/png" href="/assest/icon/favicon-32x32.png">
 
-    <!-- <script>
+    <script>
 
 document.addEventListener("DOMContentLoaded", function () {
   const hasVisitedBefore = localStorage.getItem("hasVisited");
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("hasVisited", "true");
 
     // Hide the splash screen after 1.5 seconds
-    setTimeout(hideSplashScreen, 1500);
+    setTimeout(hideSplashScreen, 2500);
   } else {
     // If the user has visited before, hide the splash screen immediately
     hideSplashScreen();
@@ -50,40 +50,7 @@ window.addEventListener("load", function () {
 });
 
 
-    </script> -->
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const hasVisitedBefore = localStorage.getItem("hasVisited");
-          const splashScreen = document.getElementById("splashScreen");
-          const homeSection = document.querySelector(".home-section");
-        
-          // Function to hide the splash screen
-          function hideSplashScreen() {
-            splashScreen.style.display = "none";
-          }
-        
-          if (!hasVisitedBefore) {
-            // If the user has not visited before, show the splash screen
-            splashScreen.style.display = "flex";
-        
-            // Set the flag in local storage to indicate that the user has visited
-            localStorage.setItem("hasVisited", "true");
-        
-            // Hide the splash screen after the home section is fully loaded
-            homeSection.addEventListener("load", hideSplashScreen);
-          } else {
-            // If the user has visited before, hide the splash screen immediately
-            hideSplashScreen();
-          }
-        });
-        
-        // Optional: You can also hide the splash screen if the window has fully loaded (including images and other resources).
-        window.addEventListener("load", function () {
-          hideSplashScreen();
-        });
-        </script>
-        
+    </script>
 
 
 </head>
