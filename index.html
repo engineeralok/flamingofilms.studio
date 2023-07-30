@@ -19,6 +19,26 @@
     <link rel="icon" type="image/png" href="/assest/icon/favicon-32x32.png">
 
     <script>
+        // JavaScript for the loading screen
+// document.addEventListener("DOMContentLoaded", function () {
+//   // Check if the user has visited the website before
+//   const hasVisitedBefore = localStorage.getItem("hasVisited");
+
+//   // If the user has not visited before, show the splash screen
+//   if (!hasVisitedBefore) {
+//     const splashScreen = document.getElementById("splashScreen");
+
+//     splashScreen.style.display = "flex";
+
+//     // Set the flag in local storage to indicate that the user has visited
+//     localStorage.setItem("hasVisited", "true");
+
+//     // Hide the splash screen after 1.5 seconds
+//     setTimeout(() => {
+//       splashScreen.style.display = "none";
+//     }, 1500);
+//   }
+// });
 
 document.addEventListener("DOMContentLoaded", function () {
   const hasVisitedBefore = localStorage.getItem("hasVisited");
@@ -37,13 +57,12 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("hasVisited", "true");
 
     // Hide the splash screen after 1.5 seconds
-    setTimeout(hideSplashScreen, 2500);
+    setTimeout(hideSplashScreen, 1500);
   } else {
     // If the user has visited before, hide the splash screen immediately
     hideSplashScreen();
   }
 });
-
 
 // Optional: You can also hide the splash screen if the window has fully loaded (including images and other resources).
 window.addEventListener("load", function () {
