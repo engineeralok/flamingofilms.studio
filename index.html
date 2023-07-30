@@ -69,38 +69,38 @@
 //   hideSplashScreen();
 // });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const hasVisitedBefore = localStorage.getItem("hasVisited");
-    const splashScreen = document.getElementById("splashScreen");
-    const loadingBar = document.getElementById("loadingBar");
+// document.addEventListener("DOMContentLoaded", function () {
+//     const hasVisitedBefore = localStorage.getItem("hasVisited");
+//     const splashScreen = document.getElementById("splashScreen");
+//     const loadingBar = document.getElementById("loadingBar");
 
-    // Function to hide the splash screen
-    function hideSplashScreen() {
-      splashScreen.style.display = "none";
-    }
+//     // Function to hide the splash screen
+//     function hideSplashScreen() {
+//       splashScreen.style.display = "none";
+//     }
 
-    if (!hasVisitedBefore) {
-      // If the user has not visited before, show the splash screen
-      splashScreen.style.display = "flex";
+//     if (!hasVisitedBefore) {
+//       // If the user has not visited before, show the splash screen
+//       splashScreen.style.display = "flex";
 
-      // Set the flag in local storage to indicate that the user has visited
-      localStorage.setItem("hasVisited", "true");
+//       // Set the flag in local storage to indicate that the user has visited
+//       localStorage.setItem("hasVisited", "true");
 
-      // Hide the splash screen and loading bar after 3 seconds
-      setTimeout(function () {
-        loadingBar.style.display = "none";
-        hideSplashScreen();
-      }, 3000);
-    } else {
-      // If the user has visited before, hide the splash screen immediately
-      hideSplashScreen();
-    }
-  });
+//       // Hide the splash screen and loading bar after 3 seconds
+//       setTimeout(function () {
+//         loadingBar.style.display = "none";
+//         hideSplashScreen();
+//       }, 3000);
+//     } else {
+//       // If the user has visited before, hide the splash screen immediately
+//       hideSplashScreen();
+//     }
+//   });
 
-  // Optional: You can also hide the splash screen if the window has fully loaded (including images and other resources).
-  window.addEventListener("load", function () {
-    hideSplashScreen();
-  });
+//   // Optional: You can also hide the splash screen if the window has fully loaded (including images and other resources).
+//   window.addEventListener("load", function () {
+//     hideSplashScreen();
+//   });
 
   
     </script>
