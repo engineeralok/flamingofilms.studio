@@ -119,7 +119,7 @@ CSS for the splash screen
   }*/
 
   /* CSS for the splash screen and loading bar animation */
-/* CSS for the splash screen and loading bar animation */
+/* CSS for the splash screen and loading bar animation 
 .splash-screen {
     position: fixed;
     top: 0;
@@ -136,7 +136,7 @@ CSS for the splash screen
   }
   
   .loading-bar {
-    width: 300px; /* Updated width to 300px */
+    width: 300px; /* Updated width to 300px 
     height: 10px;
     background-color: #ddd;
     border-radius: 5px;
@@ -146,11 +146,11 @@ CSS for the splash screen
   .loading-bar::after {
     content: "";
     display: block;
-    width: 150%; /* Updated width to 150% to make it 200px wider than the parent .loading-bar */
+    width: 150%; /* Updated width to 150% to make it 200px wider than the parent .loading-bar 
     height: 100%;
-    background-color: #db2c5c; /* Filling the loading bar with the color #db2c5c */
+    background-color: #db2c5c; /* Filling the loading bar with the color #db2c5c 
     border-radius: 5px;
-    animation: loadingAnimation 2.5s ease-in-out;
+    animation: loadingAnimation 2.5s infinite;
   }
   
   @keyframes loadingAnimation {
@@ -162,11 +162,12 @@ CSS for the splash screen
     }
   }
   
-  /* Optional styles for the loading content */
+  /* Optional styles for the loading content 
   .splash-screen h1 {
     font-size: 24px;
     color: #333;
   }
+  */
 
   
 /* ::-webkit-scrollbar {
