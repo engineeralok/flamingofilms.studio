@@ -1,0 +1,168 @@
+    <!-- <script>
+        // contact button color change script not working
+        window.addEventListener('scroll', function () {
+            var contactLink = document.querySelector('a[href="#contactus"]');
+            var windowHeight = window.innerHeight;
+            var documentHeight = document.documentElement.scrollHeight;
+            var currentPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentPosition + windowHeight >= documentHeight) {
+                // Reached the bottom of the page
+                contactLink.style.color = '#db2c5b';
+
+            } else {
+                // Not at the bottom of the page
+                contactLink.style.color = '#444444';
+            }
+        });
+
+
+    </script> -->
+
+    <script>
+//nav bar button color change when scrolling
+        // window.addEventListener('scroll', () => {
+        //     const sections = document.querySelectorAll('section');
+        //     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+        //     sections.forEach((section) => {
+        //         const sectionTop = section.offsetTop;
+        //         const sectionHeight = section.offsetHeight;
+        //         const sectionId = section.getAttribute('id');
+
+        //         // Check if the section is in the viewport
+        //         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+        //             // Apply the active class to the corresponding navigation link
+        //             document.querySelector(`nav a[href="#${sectionId}"]`).classList.add('active');
+        //         } else {
+        //             // Remove the active class from the navigation link
+        //             document.querySelector(`nav a[href="#${sectionId}"]`).classList.remove('active');
+        //         }
+        //     });
+        // });
+
+        // window.addEventListener('scroll', () => {
+        //     const sections = document.querySelectorAll('section');
+        //     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+        //     sections.forEach((section) => {
+        //         const sectionTop = section.offsetTop;
+        //         const sectionHeight = section.offsetHeight;
+        //         const sectionId = section.getAttribute('id');
+
+        //         // Check if the section is in the viewport
+        //         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+        //             // Apply the active class to the corresponding navigation link
+        //             document.querySelector(`nav a[href="#${sectionId}"]`).classList.add('active');
+        //         } else {
+        //             // Remove the active class from the navigation link
+        //             document.querySelector(`nav a[href="#${sectionId}"]`).classList.remove('active');
+        //         }
+        //     });
+        // });
+
+        // window.addEventListener('scroll', () => {
+        //     const sections = document.querySelectorAll('section');
+        //     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+        //     sections.forEach((section) => {
+        //         const sectionTop = section.offsetTop;
+        //         const sectionHeight = section.offsetHeight;
+        //         const sectionId = section.getAttribute('id');
+
+        //         // Check if the section is in the viewport
+        //         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+        //             // Apply the active class to the corresponding navigation link
+        //             document.querySelector(`nav a[href="#${sectionId}"]`).classList.add('active');
+        //         } else {
+        //             // Remove the active class from the navigation link
+        //             document.querySelector(`nav a[href="#${sectionId}"]`).classList.remove('active');
+        //         }
+        //     });
+
+        //     // Get the height of the window
+        //     const windowHeight = window.innerHeight;
+
+        //     // Get the height of the document
+        //     const documentHeight = document.body.clientHeight;
+
+        //     // Calculate the distance from the bottom of the page
+        //     const distanceFromBottom = documentHeight - (scrollPosition + windowHeight);
+
+        //     // Define the desired color for the contact link
+        //     const desiredColor = '#db2c5b';
+
+        //     // Define the color for other links
+        //     const otherLinksColor = '#444444';
+
+        //     // Get the contact link element
+        //     const contactLink = document.getElementById('contact-link');
+
+        //     // Get the get in touch link element
+        //     const getInTouchLink = document.querySelector('.contactus-btn');
+
+        //     // Check if the user has reached the bottom of the page
+        //     if (distanceFromBottom <= 0) {
+        //         // Apply the desired color to the contact link
+        //         contactLink.style.color = desiredColor;
+
+        //         // Set the color of other links
+        //         document.querySelectorAll('nav a:not(#contact-link):not(.contactus-btn)').forEach((link) => {
+        //             link.style.color = otherLinksColor;
+        //         });
+        //     } else {
+        //         // Reset the color of the contact link
+        //         contactLink.style.color = '';
+
+        //         // Reset the color of other links
+        //         document.querySelectorAll('nav a:not(.contactus-btn)').forEach((link) => {
+        //             link.style.color = '';
+        //         });
+        //     }
+
+        //     // Reset the color of the get in touch link
+        //     getInTouchLink.style.color = '';
+        // });
+
+    </script>
+
+        <!-- <script>
+        // Save the scroll position in local storage when the user scrolls
+        window.addEventListener('scroll', function () {
+            localStorage.setItem('scrollPosition', window.scrollY);
+        });
+
+        // Restore the scroll position from local storage when the page loads
+        window.addEventListener('load', function () {
+            var scrollPosition = localStorage.getItem('scrollPosition');
+            if (scrollPosition !== null) {
+                window.scrollTo(0, scrollPosition);
+                localStorage.removeItem('scrollPosition');
+            }
+        });
+
+    </script> -->
+
+
+        <!-- <script type="text/javascript">
+        window.addEventListener('scroll',reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (let i = 0; i < reveals.length; i++) {
+                let windowHeight = window.innerHeight;
+                let revealTop = reveal[i].getBoundingClientRect().top;
+                let revealPoint = 150;
+
+                if(revealTop < windowHeight - revealPoint){
+                    reveals[i].classList.add('active');
+
+                }else{
+                     reveals[i].classList.remove('active');
+                     
+                }
+                
+            }
+        }
+    </script> -->
