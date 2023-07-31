@@ -19,8 +19,10 @@
 
     <link rel="icon" type="image/png" href="/assest/icon/favicon-32x32.png">
 
+    <!-- <script src="script.js"></script> -->
+
     <script>
-       
+
 // document.addEventListener("DOMContentLoaded", function () {
 //   // Check if the user has visited the website before
 //   const hasVisitedBefore = localStorage.getItem("hasVisited");
@@ -175,9 +177,9 @@
 
     <main>
         <!-- <div class="splash-screen" id="splashScreen"> -->
-            <!-- Add your splash screen content here -->
-            <!-- <div class="loading-bar" id="loadingBar"></div> -->
-            <!-- <h1>Loading...</h1> -->
+        <!-- Add your splash screen content here -->
+        <!-- <div class="loading-bar" id="loadingBar"></div> -->
+        <!-- <h1>Loading...</h1> -->
         <!-- </div> -->
         <!-- Home  ---------------------------------->
         <section id="home" class="home-section flex flex-dir-row desktop-width">
@@ -298,8 +300,8 @@
             </div>
         </section>
         <!-- About us Section   ---------------------------->
-        <section id="about">
-            <section class="about-us-section desktop-width">
+        <section id="about" class="flex flex-dir-col desktop-width">
+            <div class="about-us-section">
 
                 <div class="flex flex-dir-col">
                     <div class="about-heading flex flex-justify-center flex-dir-col flex-align-center">
@@ -364,215 +366,216 @@
                     </div> -->
                     </div>
                 </div>
-            </section>
-
-        </section>
-
-        <section class="work-section flex flex-dir-col desktop-width flex-justify-center">
-
-            <div id="get_into_it" class="work-section-top flex flex-dir-row desktop-width flex-justify-center">
-
-                <div class="work-sec-img flex flex-dir-col flex-justify-center flex-align-center" data-aos="zoom-out"
-                    data-aos-delay="200" data-aos-duration="2200" data-aos-once="true">
-                    <img src="/assest/second_illustration.png" alt="flamingo films studio second illustration">
-                </div>
-
-                <div class="work-sec-heading flex flex-dir-col flex-justify-center">
-                    <h3 data-aos="fade-left" data-aos-delay="300" data-aos-duration="1100" data-aos-once="true">
-                        <span>What</span> <br>
-
-                        <!-- </h3>
-                    <h3> -->
-                        <span>Sets Us Apart</span>
-                    </h3>
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true">
-                        We help businesses and creators to stand out from the competition with high-quality,
-                        engaging
-                        video content. With our expertise, businesses can achieve their goals and build a strong
-                        online presence through effective and engaging videos.
-                    </p>
-                </div>
-
             </div>
 
-            <div class="work-section-bottom flex flex-dir-col">
+            <div class="work-section flex flex-dir-col desktop-width flex-justify-center">
 
-                <div class="work-sec-bottom-heading flex flex-align-center flex-justify-center">
-                    <h3 data-aos="zoom-in" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true">
-                        Here's What Stand Out us from others
-                    </h3>
+                <div id="get_into_it" class="work-section-top flex flex-dir-row desktop-width flex-justify-center">
+
+                    <div class="work-sec-img flex flex-dir-col flex-justify-center flex-align-center"
+                        data-aos="zoom-out" data-aos-delay="200" data-aos-duration="2200" data-aos-once="true">
+                        <img src="/assest/second_illustration.png" alt="flamingo films studio second illustration">
+                    </div>
+
+                    <div class="work-sec-heading flex flex-dir-col flex-justify-center">
+                        <h3 data-aos="fade-left" data-aos-delay="300" data-aos-duration="1100" data-aos-once="true">
+                            <span>What</span> <br>
+
+                            <!-- </h3>
+                        <h3> -->
+                            <span>Sets Us Apart</span>
+                        </h3>
+                        <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true">
+                            We help businesses and creators to stand out from the competition with high-quality,
+                            engaging
+                            video content. With our expertise, businesses can achieve their goals and build a strong
+                            online presence through effective and engaging videos.
+                        </p>
+                    </div>
+
                 </div>
 
-                <div class="work-sec-cards flex flex-dir-row">
+                <div class="work-section-bottom flex flex-dir-col">
 
-
-                    <div class="work-card-container" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"
-                        data-aos-once="true">
-                        <div class="work-card">
-
-                            <div class="work-card-items flex flex-dir-col">
-
-                                <div class="work-card-icon flex flex-dir-row">
-                                    <img src="/assest/icon/content_research_icon.png" alt="content_research_icon">
-                                </div>
-
-                                <div class="work-card-description">
-                                    <h3>
-                                        Content Research
-                                    </h3>
-
-                                    <p>
-                                        "One size doesn't fit all". We'll help you discover valuable and compelling
-                                        content
-                                        for your brand that captures your audience's attention
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
+                    <div class="work-sec-bottom-heading flex flex-align-center flex-justify-center">
+                        <h3 data-aos="zoom-in" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true">
+                            Here's What Stand Out us from others
+                        </h3>
                     </div>
 
-                    <div class="work-card-container" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
-                        data-aos-once="true">
-                        <div class="work-card flex">
+                    <div class="work-sec-cards flex flex-dir-row">
 
-                            <div class="work-card-items flex flex-dir-col">
 
-                                <div class="work-card-icon flex flex-dir-row">
-                                    <img src="/assest/icon/video_editing_icon.png" alt="video_editing_icon">
+                        <div class="work-card-container" data-aos="fade-up" data-aos-delay="100"
+                            data-aos-duration="1000" data-aos-once="true">
+                            <div class="work-card">
+
+                                <div class="work-card-items flex flex-dir-col">
+
+                                    <div class="work-card-icon flex flex-dir-row">
+                                        <img src="/assest/icon/content_research_icon.png" alt="content_research_icon">
+                                    </div>
+
+                                    <div class="work-card-description">
+                                        <h3>
+                                            Content Research
+                                        </h3>
+
+                                        <p>
+                                            "One size doesn't fit all". We'll help you discover valuable and compelling
+                                            content
+                                            for your brand that captures your audience's attention
+                                        </p>
+                                    </div>
+
                                 </div>
-
-                                <div class="work-card-description">
-                                    <h3>
-                                        Video Editing
-                                    </h3>
-
-                                    <p>
-                                        We use animation and illustration techniques to create visually appealing
-                                        videos
-                                        that capture the attention of your audience.
-                                    </p>
-                                </div>
-
                             </div>
                         </div>
-                    </div>
 
-                    <div class="work-card-container" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"
-                        data-aos-once="true">
-                        <div class="work-card flex">
+                        <div class="work-card-container" data-aos="fade-up" data-aos-delay="200"
+                            data-aos-duration="1000" data-aos-once="true">
+                            <div class="work-card flex">
 
-                            <div class="work-card-items flex flex-dir-col">
+                                <div class="work-card-items flex flex-dir-col">
 
-                                <div class="work-card-icon flex flex-dir-row">
-                                    <img src="/assest/icon/video_production_icon.png" alt="video_production_icon">
+                                    <div class="work-card-icon flex flex-dir-row">
+                                        <img src="/assest/icon/video_editing_icon.png" alt="video_editing_icon">
+                                    </div>
+
+                                    <div class="work-card-description">
+                                        <h3>
+                                            Video Editing
+                                        </h3>
+
+                                        <p>
+                                            We use animation and illustration techniques to create visually appealing
+                                            videos
+                                            that capture the attention of your audience.
+                                        </p>
+                                    </div>
+
                                 </div>
-
-                                <div class="work-card-description">
-                                    <h3>
-                                        Video Production
-                                    </h3>
-
-                                    <p>
-                                        We'll capture top-notch videos that seamlessly integrate with your brand
-                                        identity
-                                        and connect with your audience.
-                                    </p>
-                                </div>
-
                             </div>
                         </div>
-                    </div>
 
-                    <div class="work-card-container" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"
-                        data-aos-once="true">
-                        <div class="work-card flex">
+                        <div class="work-card-container" data-aos="fade-up" data-aos-delay="300"
+                            data-aos-duration="1000" data-aos-once="true">
+                            <div class="work-card flex">
 
-                            <div class="work-card-items flex flex-dir-col">
+                                <div class="work-card-items flex flex-dir-col">
 
-                                <div class="work-card-icon flex flex-dir-row">
-                                    <img src="/assest/icon/graphics_designing_icon.png" alt="graphics_designing_icon">
+                                    <div class="work-card-icon flex flex-dir-row">
+                                        <img src="/assest/icon/video_production_icon.png" alt="video_production_icon">
+                                    </div>
+
+                                    <div class="work-card-description">
+                                        <h3>
+                                            Video Production
+                                        </h3>
+
+                                        <p>
+                                            We'll capture top-notch videos that seamlessly integrate with your brand
+                                            identity
+                                            and connect with your audience.
+                                        </p>
+                                    </div>
+
                                 </div>
-
-                                <div class="work-card-description">
-                                    <h3>
-                                        Graphic Designing
-                                    </h3>
-
-                                    <p>
-                                        Without an effective thumbnail strategy, even the best video of the world
-                                        may
-                                        not
-                                        reach its full potential. Let us help you make your videos shine.
-                                    </p>
-                                </div>
-
                             </div>
                         </div>
-                    </div>
 
+                        <div class="work-card-container" data-aos="fade-up" data-aos-delay="400"
+                            data-aos-duration="1000" data-aos-once="true">
+                            <div class="work-card flex">
 
+                                <div class="work-card-items flex flex-dir-col">
 
-                    <div class="work-card-container" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
-                        data-aos-once="true">
-                        <div class="work-card flex">
+                                    <div class="work-card-icon flex flex-dir-row">
+                                        <img src="/assest/icon/graphics_designing_icon.png"
+                                            alt="graphics_designing_icon">
+                                    </div>
 
-                            <div class="work-card-items flex flex-dir-col">
+                                    <div class="work-card-description">
+                                        <h3>
+                                            Graphic Designing
+                                        </h3>
 
-                                <div class="work-card-icon flex flex-dir-row">
-                                    <img src="/assest/icon/social_media_camp_icon.png" alt="social_media_camp_icon">
+                                        <p>
+                                            Without an effective thumbnail strategy, even the best video of the world
+                                            may
+                                            not
+                                            reach its full potential. Let us help you make your videos shine.
+                                        </p>
+                                    </div>
+
                                 </div>
-
-                                <div class="work-card-description">
-                                    <h3>
-                                        Social Media Campaigns
-                                    </h3>
-
-                                    <p>
-                                        <!-- We'll assist you in expanding your social media presence with our expertise in
-                                    creating engaging videos, compelling graphics, and entertaining memes, along with
-                                    collaborations, targeted advertising, and influencer marketing. -->
-
-                                        We'll assist you in expanding your social media presence with our
-                                        proficiency in
-                                        creating video, graphics, and memes, along with collaborations, targeted
-                                        advertising, and influencer marketing.
-
-                                        <!-- with engaging video content, eye-catching graphics, and attention-grabbing memes. -->
-                                    </p>
-                                </div>
-
                             </div>
                         </div>
-                    </div>
 
-                    <div class="work-card-container" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"
-                        data-aos-once="true">
-                        <div class="work-card flex">
 
-                            <div class="work-card-items flex flex-dir-col">
 
-                                <div class="work-card-icon flex flex-dir-row">
-                                    <img src="/assest/icon/meme_creation_icon.png" alt="meme_creation_icon">
+                        <div class="work-card-container" data-aos="fade-up" data-aos-delay="500"
+                            data-aos-duration="1000" data-aos-once="true">
+                            <div class="work-card flex">
+
+                                <div class="work-card-items flex flex-dir-col">
+
+                                    <div class="work-card-icon flex flex-dir-row">
+                                        <img src="/assest/icon/social_media_camp_icon.png" alt="social_media_camp_icon">
+                                    </div>
+
+                                    <div class="work-card-description">
+                                        <h3>
+                                            Social Media Campaigns
+                                        </h3>
+
+                                        <p>
+                                            <!-- We'll assist you in expanding your social media presence with our expertise in
+                                        creating engaging videos, compelling graphics, and entertaining memes, along with
+                                        collaborations, targeted advertising, and influencer marketing. -->
+
+                                            We'll assist you in expanding your social media presence with our
+                                            proficiency in
+                                            creating video, graphics, and memes, along with collaborations, targeted
+                                            advertising, and influencer marketing.
+
+                                            <!-- with engaging video content, eye-catching graphics, and attention-grabbing memes. -->
+                                        </p>
+                                    </div>
+
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="work-card-description">
-                                    <h3>
-                                        Meme Creation
-                                    </h3>
+                        <div class="work-card-container" data-aos="fade-up" data-aos-delay="600"
+                            data-aos-duration="1000" data-aos-once="true">
+                            <div class="work-card flex">
 
-                                    <p>
-                                        "In today's digital age, the power of memes cannot be ignored". We'll assist
-                                        you
-                                        in
-                                        creating the most imaginative and expressive memes to express your brand's
-                                        personality!
+                                <div class="work-card-items flex flex-dir-col">
+
+                                    <div class="work-card-icon flex flex-dir-row">
+                                        <img src="/assest/icon/meme_creation_icon.png" alt="meme_creation_icon">
+                                    </div>
+
+                                    <div class="work-card-description">
+                                        <h3>
+                                            Meme Creation
+                                        </h3>
+
+                                        <p>
+                                            "In today's digital age, the power of memes cannot be ignored". We'll assist
+                                            you
+                                            in
+                                            creating the most imaginative and expressive memes to express your brand's
+                                            personality!
+                                    </div>
+
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
         </section>
@@ -589,11 +592,20 @@
                     <h3>
                         Email Us
                     </h3>
-                    <ul>
+                    <p>Have any questions or inquiries? Send us a message!</p>
+                    <!-- <ul>
                         <li><a href="">contact@flamingofilms.studio</a></li>
                         <li><a href="">alok@flamingofilms.studio</a></li>
                         <li><a href="">dhananjay@flamingofilms.studio</a></li>
-                    </ul>
+                    </ul> -->
+                    <div class="contactus-form">
+                        <form action="send_message.php" method="post">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
                 </div>
 
                 <div class="contactus-img">
@@ -642,51 +654,8 @@
     </div>
     </footer>
 
-    <!-- <script type="text/javascript">
-        window.addEventListener('scroll',reveal);
-
-        function reveal(){
-            var reveals = document.querySelectorAll('.reveal');
-
-            for (let i = 0; i < reveals.length; i++) {
-                let windowHeight = window.innerHeight;
-                let revealTop = reveal[i].getBoundingClientRect().top;
-                let revealPoint = 150;
-
-                if(revealTop < windowHeight - revealPoint){
-                    reveals[i].classList.add('active');
-
-                }else{
-                     reveals[i].classList.remove('active');
-                     
-                }
-                
-            }
-        }
-    </script> -->
-    <!-- 
     <script>
-        AOS.init();
-    </script> -->
-
-    <!-- <script>
-        // Save the scroll position in local storage when the user scrolls
-        window.addEventListener('scroll', function () {
-            localStorage.setItem('scrollPosition', window.scrollY);
-        });
-
-        // Restore the scroll position from local storage when the page loads
-        window.addEventListener('load', function () {
-            var scrollPosition = localStorage.getItem('scrollPosition');
-            if (scrollPosition !== null) {
-                window.scrollTo(0, scrollPosition);
-                localStorage.removeItem('scrollPosition');
-            }
-        });
-
-    </script> -->
-
-    <script>
+        // get in touch form
         // Select the "Get In Touch" button
         const getInTouchButton = document.querySelector('.contactus-btn');
 
@@ -699,39 +668,18 @@
         });
     </script>
 
+
     <script>
+        //scrolling nav bar animation
         window.addEventListener('scroll', function () {
             var navbar = document.querySelector('.navbar');
             var scrolled = window.scrollY > 0;
             navbar.classList.toggle('scrolled', scrolled);
         });
-
-        // window.addEventListener('scroll', function () {
-        //     var navbar = document.querySelector('.navbar');
-        //     var scrolled = window.scrollY > 0;
-        //     navbar.classList.toggle('scrolled', scrolled);
-
-        //     if (scrolled) {
-        //         navbar.classList.add('fade-down');
-        //     } else {
-        //         navbar.classList.remove('fade-down');
-        //     }
-        // });
     </script>
 
     <script>
-        // const toggleButton = document.getElementById('nav-toggle');
-        // const navLinks = document.getElementById('nav-links');
-
-        // toggleButton.addEventListener('click', () => {
-        //     navLinks.classList.toggle('active');
-        //     // event.preventDefault();
-        // })
-
-        // document.querySelector('#nav-toggle').addEventListener('click', function (event) {
-        //     event.preventDefault();
-        // });
-
+        // responsive menu button 
         const toggleButton = document.getElementById('nav-toggle');
         const navLinks = document.getElementById('nav-links');
 
@@ -741,9 +689,9 @@
         });
 
         // Hide the navigation menu and scroll to the clicked section
-        const navItems = document.querySelectorAll('.nav-links ul li a');
+        const navItemss = document.querySelectorAll('.nav-links ul li a');
 
-        navItems.forEach((navItem) => {
+        navItemss.forEach((navItem) => {
             navItem.addEventListener('click', (event) => {
                 event.preventDefault(); // Prevent the default behavior of scrolling to the section
                 navLinks.classList.remove('active');
@@ -754,13 +702,13 @@
                 targetSection.scrollIntoView({ behavior: 'smooth' });
             });
         });
-
-
     </script>
 
-    <script>
 
-        window.addEventListener('scroll', () => {
+    <script>
+        //nav link color change event
+        // Function to update the active link based on the current section in view
+        function updateActiveLink() {
             const sections = document.querySelectorAll('section');
             const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -772,116 +720,58 @@
                 // Check if the section is in the viewport
                 if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
                     // Apply the active class to the corresponding navigation link
-                    document.querySelector(`nav a[href="#${sectionId}"]`).classList.add('active');
+                    const navLink = document.querySelector(`nav a[href="#${sectionId}"]`);
+                    navLink.classList.add('active');
                 } else {
                     // Remove the active class from the navigation link
                     document.querySelector(`nav a[href="#${sectionId}"]`).classList.remove('active');
                 }
             });
+        }
+
+        // Add an event listener to all navigation links
+        const navItems = document.querySelectorAll('.hover-link');
+
+        navItems.forEach((navItem) => {
+            navItem.addEventListener('click', (event) => {
+                event.preventDefault(); // Prevent the default behavior of scrolling to the section
+
+                // Scroll to the clicked section
+                const targetId = navItem.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+
+                // Update the active link
+                updateActiveLink();
+            });
         });
 
-        // window.addEventListener('scroll', () => {
-        //     const sections = document.querySelectorAll('section');
-        //     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-        //     sections.forEach((section) => {
-        //         const sectionTop = section.offsetTop;
-        //         const sectionHeight = section.offsetHeight;
-        //         const sectionId = section.getAttribute('id');
-
-        //         // Check if the section is in the viewport
-        //         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-        //             // Apply the active class to the corresponding navigation link
-        //             document.querySelector(`nav a[href="#${sectionId}"]`).classList.add('active');
-        //         } else {
-        //             // Remove the active class from the navigation link
-        //             document.querySelector(`nav a[href="#${sectionId}"]`).classList.remove('active');
-        //         }
-        //     });
-        // });
-
-        // window.addEventListener('scroll', () => {
-        //     const sections = document.querySelectorAll('section');
-        //     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-        //     sections.forEach((section) => {
-        //         const sectionTop = section.offsetTop;
-        //         const sectionHeight = section.offsetHeight;
-        //         const sectionId = section.getAttribute('id');
-
-        //         // Check if the section is in the viewport
-        //         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-        //             // Apply the active class to the corresponding navigation link
-        //             document.querySelector(`nav a[href="#${sectionId}"]`).classList.add('active');
-        //         } else {
-        //             // Remove the active class from the navigation link
-        //             document.querySelector(`nav a[href="#${sectionId}"]`).classList.remove('active');
-        //         }
-        //     });
-
-        //     // Get the height of the window
-        //     const windowHeight = window.innerHeight;
-
-        //     // Get the height of the document
-        //     const documentHeight = document.body.clientHeight;
-
-        //     // Calculate the distance from the bottom of the page
-        //     const distanceFromBottom = documentHeight - (scrollPosition + windowHeight);
-
-        //     // Define the desired color for the contact link
-        //     const desiredColor = '#db2c5b';
-
-        //     // Define the color for other links
-        //     const otherLinksColor = '#444444';
-
-        //     // Get the contact link element
-        //     const contactLink = document.getElementById('contact-link');
-
-        //     // Get the get in touch link element
-        //     const getInTouchLink = document.querySelector('.contactus-btn');
-
-        //     // Check if the user has reached the bottom of the page
-        //     if (distanceFromBottom <= 0) {
-        //         // Apply the desired color to the contact link
-        //         contactLink.style.color = desiredColor;
-
-        //         // Set the color of other links
-        //         document.querySelectorAll('nav a:not(#contact-link):not(.contactus-btn)').forEach((link) => {
-        //             link.style.color = otherLinksColor;
-        //         });
-        //     } else {
-        //         // Reset the color of the contact link
-        //         contactLink.style.color = '';
-
-        //         // Reset the color of other links
-        //         document.querySelectorAll('nav a:not(.contactus-btn)').forEach((link) => {
-        //             link.style.color = '';
-        //         });
-        //     }
-
-        //     // Reset the color of the get in touch link
-        //     getInTouchLink.style.color = '';
-        // });
-
-    </script>
-    <script>
-        window.addEventListener('scroll', function () {
-            var contactLink = document.querySelector('a[href="#contactus"]');
-            var windowHeight = window.innerHeight;
-            var documentHeight = document.documentElement.scrollHeight;
-            var currentPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (currentPosition + windowHeight >= documentHeight) {
-                // Reached the bottom of the page
-                contactLink.style.color = '#db2c5b';
-
-            } else {
-                // Not at the bottom of the page
-                contactLink.style.color = '#444444';
-            }
+        // Update the active link using Intersection Observer
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    // Apply the active class to the corresponding navigation link
+                    const sectionId = entry.target.getAttribute('id');
+                    document.querySelector(`nav a[href="#${sectionId}"]`).classList.add('active');
+                } else {
+                    // Remove the active class from the navigation link
+                    const sectionId = entry.target.getAttribute('id');
+                    document.querySelector(`nav a[href="#${sectionId}"]`).classList.remove('active');
+                }
+            });
         });
 
+        // Observe all sections
+        const sections = document.querySelectorAll('section');
+        sections.forEach((section) => {
+            sectionObserver.observe(section);
+        });
 
+        // Update the active link on page load
+        window.addEventListener('load', updateActiveLink);
+
+        // Update the active link on scroll
+        window.addEventListener('scroll', updateActiveLink);
     </script>
 
     <script src="https://kit.fontawesome.com/01b8eed51c.js" crossorigin="anonymous"></script>
