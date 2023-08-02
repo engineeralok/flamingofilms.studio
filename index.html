@@ -586,9 +586,9 @@
                 <h2 data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true">Contact</h2>
                 <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">Contact Us</p>
             </div>
-            <div class="contactus-box" >
-                <div class="contactus-info" data-aos="fade-up" data-aos-delay="200"
-                data-aos-duration="1000" data-aos-once="true">
+            <div class="contactus-box">
+                <div class="contactus-info" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+                    data-aos-once="true">
                     <h3>
                         Email Us
                     </h3>
@@ -801,12 +801,13 @@
                 var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 return email && emailPattern.test(email);
             }
-            if (!isValidEmail(email)) {
-                swal("Invalid Email", "Please enter a valid email address", "error");
-            }
-            else {
-                if (name === "" || email === "" || mess === "") {
-                    swal("Incomplete details!", "Please fill in all fields.", "error");
+
+
+            if (name === "" || email === "" || mess === "") {
+                swal("Incomplete details!", "Please fill in all fields.", "error");
+            } else {
+                if (!isValidEmail(email)) {
+                    swal("Invalid Email", "Please enter a valid email address", "error");
                 } else {
                     var body = "Client Name: " + name + "<br/>Client Email: " + email + "<br/>Client Message From Flamingo Films Studio Website: " + mess;
 
