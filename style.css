@@ -197,6 +197,89 @@ CSS for the splash screen
     opacity: 1;
 } */
 
+/* Alert Box */
+/* Font Awesome for the check icon */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
+/* Custom Alert Box Styles */
+.custom-alert {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 9999;
+  animation: ease-in 0.3s ease;
+}
+
+.custom-alert-content {
+  text-align: center;
+}
+
+.custom-alert i {
+  color: #5cb85c;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.custom-alert h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.custom-alert p {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.custom-alert button {
+  background-color: #982040;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.custom-alert button:hover {
+  background-color: #831c37;
+}
+
+/* Keyframes for pop-up animation */
+@keyframes popUpAnimation {
+  0% {
+    transform: translate(-50%, -60%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for check animation */
+@keyframes checkAnimation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
 /* navbar----------------------------------- */
 header {
     width: 100%;
