@@ -505,6 +505,9 @@ nav li {
 }
 
 /* about us section------------------------------------- */
+#about{
+    margin-bottom: 10px;
+}
 
 .about-us-section {
     /* background-color: #101057; */
