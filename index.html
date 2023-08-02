@@ -593,19 +593,19 @@
                         Email Us
                     </h3>
                     <p>Have any questions or inquiries? Send us a message!</p>
-                    <ul>
+                    <!-- <ul>
                         <li><a href="">contact@flamingofilms.studio</a></li>
                         <li><a href="">alok@flamingofilms.studio</a></li>
                         <li><a href="">dhananjay@flamingofilms.studio</a></li>
-                    </ul>
-                    <!-- <div class="contactus-form">
-                        <form action="send_message.php" method="post">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
-                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                            <button type="submit">Send Message</button>
+                    </ul> -->
+                    <div class="contactus-form">
+                        <form action="">
+                            <input type="text" id="visitor-name" placeholder="Your Name">
+                            <input type="email" id="visitor-email" placeholder="Your Email">
+                            <textarea name="message" id="message" placeholder="Your Message" rows="5"></textarea>
+                            <button type="submit" onclick="SendMessage()" value="button">Send Message</button>
                         </form>
-                    </div> -->
+                    </div>
                 </div>
 
                 <div class="contactus-img">
@@ -635,6 +635,7 @@
 
 
             </div>
+        </footer>
 
     </main>
     <hr>
@@ -652,7 +653,7 @@
             <!-- <a href="">Khushi</a> -->
         </div>
     </div>
-    </footer>
+
 
     <script>
         // get in touch form
@@ -779,6 +780,55 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+
+
+    <!-- //send message via contact section -->
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+    <script>
+        function SendMessage() {
+
+            event.preventDefault()
+
+            var name = document.getElementById("visitor-name").value;
+            var email = document.getElementById("visitor-email").value;
+            // var contact = document.getElementById("Contact").value;
+            // var sub = document.getElementById("subject").value;
+            var mess = document.getElementById("message").value;
+
+            var body = "Visitor Name: " + name + "<br/>Visitor Email:" + email + "<br/>Visitor Message From Flamingo Films Studio Website:" + mess;
+
+            console.log(
+               body
+            );
+            Email.send({
+                SecureToken : "9413b33c-caaf-4c02-b643-ef2754958b2d",
+                To: 'flamingofilms.studio@gmail.com',
+                From: "contact@flamingofilms.studio",
+                Subject: "Flamingo Films Studio - New Mail",
+                Body: body,
+            }).then(
+                message =>{
+                    if(message=='OK'){
+
+                        swal("Successfull", "Your Data Successfull Received", "success");
+                    }
+                    else{
+
+                        swal("Something Wrong", "Your Data is not Received", "error");
+                    }
+                }
+              );
+
+        }
+
+
     </script>
 </body>
 
