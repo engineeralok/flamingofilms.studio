@@ -599,11 +599,14 @@
                         <li><a href="">dhananjay@flamingofilms.studio</a></li>
                     </ul> -->
                     <div class="contactus-form">
-                        <form action="">
-                            <input type="text" id="visitor-name" placeholder="Your Name">
-                            <input type="email" id="visitor-email" placeholder="Your Email">
-                            <textarea name="message" id="message" placeholder="Your Message" rows="5"></textarea>
-                            <button type="submit" onclick="SendMessage()" value="button">Send Message</button>
+                        <form action="#">
+                            <input type="text" id="client-name" placeholder="Your Name" required>
+                            <!-- <input type="email" id="visitor-email" placeholder="Your Email" required> -->
+                            <input type="email" id="client-email" placeholder="Your Email" required
+                                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                            <textarea name="message" id="message" placeholder="Your Message" rows="5"
+                                required></textarea>
+                            <button type="button" onclick="SendMessage()">Send Message</button>
                         </form>
                     </div>
                 </div>
@@ -789,44 +792,48 @@
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-
-
     <script>
         function SendMessage() {
-
-            event.preventDefault()
-
-            var name = document.getElementById("visitor-name").value;
-            var email = document.getElementById("visitor-email").value;
-            // var contact = document.getElementById("Contact").value;
-            // var sub = document.getElementById("subject").value;
+            var name = document.getElementById("client-name").value;
+            var email = document.getElementById("client-email").value;
             var mess = document.getElementById("message").value;
+            function isValidEmail(email) {
+                var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return email && emailPattern.test(email);
+            }
+            if (!isValidEmail(email)) {
+                swal("Invalid Email", "Please enter a valid email address", "error");
+            }
+            else {
+                if (name === "" || email === "" || mess === "") {
+                    swal("Incomplete details!", "Please fill in all fields.", "error");
+                } else {
+                    var body = "Client Name: " + name + "<br/>Client Email: " + email + "<br/>Client Message From Flamingo Films Studio Website: " + mess;
 
-            var body = "Visitor Name: " + name + "<br/>Visitor Email:" + email + "<br/>Visitor Message From Flamingo Films Studio Website:" + mess;
+                    Email.send({
+                        SecureToken: "9413b33c-caaf-4c02-b643-ef2754958b2d",
+                        To: 'flamingofilms.studio@gmail.com',
+                        From: "contact.flamingofilms.studio@gmail.com",
+                        Subject: "Flamingo Films Studio - New Mail",
+                        Body: body,
+                    }).then(
+                        message => {
 
-            console.log(
-               body
-            );
-            Email.send({
-                SecureToken : "9413b33c-caaf-4c02-b643-ef2754958b2d",
-                To: 'flamingofilms.studio@gmail.com',
-                From: "contact@flamingofilms.studio",
-                Subject: "Flamingo Films Studio - New Mail",
-                Body: body,
-            }).then(
-                message =>{
-                    if(message=='OK'){
 
-                        swal("Good job!", "Message Sent.", "success");
-                    }
-                    else{
+                            if (message == 'OK') {
 
-                        swal("Something Wrong", "Your Data is not Received", "error");
-                    }
+                                swal("Thank You!", "We will reach you soon.", "success");
+                            }
+                            else {
+
+                                swal("Something Wrong", "Your Data is not Received", "error");
+                            }
+                        }
+                    );
                 }
-              );
-
+            }
         }
+
 
 
     </script>
