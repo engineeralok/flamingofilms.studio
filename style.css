@@ -665,15 +665,9 @@ nav li {
 /* work-section-bottom */
 
 .work-section-bottom {
-    /* height: 800px; */
     height: auto;
-    /* margin-top: 50px; */
-    /* margin-bottom: 60px; */
-    /* padding-top: 50px; */
     padding-top: 100px;
     padding-bottom: auto;
-
-
 }
 
 .work-sec-bottom-heading {
