@@ -580,8 +580,8 @@ nav li {
     flex-direction: column;
     transition:all  0.3s ease-in-out;
     position: absolute;
-    font-size: 24px;
-    opacity: 1;
+    font-size: 1px;
+    opacity: 0;
     /* top: 50%; */
     /* left: -20px;  */
     /* transform: translateY(-50%) translateX(-50%); */
