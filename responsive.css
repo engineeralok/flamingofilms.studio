@@ -503,13 +503,23 @@
     /* contactus--------------------------- */
     .contactus {
         padding-top: 0;
+        padding-bottom: 48px;
     }
 
     .contactus-box {
         display: flex;
         flex-direction: column-reverse;
         padding: 0;
+        gap: 48px;
         margin-block: 20px;
+    }
+
+    .contactus-img {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
     }
 
     .contactus-header h2 {
@@ -768,6 +778,14 @@
         font-size: 1.0rem;
     }
 
+    .contactus{
+        padding-bottom: 34px;
+    }
+
+    .contactus-box{
+        gap: 34px;
+    }
+
     .contactus-header h2 {
         font-size: 1.1rem;
         padding: 0;
@@ -984,6 +1002,14 @@
 
     .work-card-description p {
         font-size: 0.9rem;
+    }
+
+    .contactus{
+        padding-bottom: 26px;
+    }
+
+    .contactus-box{
+        gap: 26px;
     }
 
     .contactus-header h2 {
