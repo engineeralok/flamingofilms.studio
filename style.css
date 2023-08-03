@@ -217,8 +217,8 @@ CSS for the splash screen
     transition: all 0.3s ease 0s;
 }
 
-.swal-button:hover{
-    color:#000000;
+.swal-button:hover {
+    color: #000000;
 
 }
 
@@ -505,7 +505,7 @@ nav li {
 }
 
 /* about us section------------------------------------- */
-#about{
+#about {
     margin-bottom: 10px;
 }
 
@@ -573,6 +573,82 @@ nav li {
     align-items: center;
     position: relative;
 }
+
+.social-icons {
+    display: all;
+    display: flex;
+    flex-direction: column;
+    transition:all  0.3s ease-in-out;
+    position: absolute;
+    font-size: 1px;
+    opacity: 0;
+    /* top: 50%; */
+    /* left: -20px;  */
+    /* transform: translateY(-50%) translateX(-50%); */
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+
+.social-icon-1 {
+    position: absolute;
+    transform: translateX(-280%) translateY(-190%);
+}
+
+.social-icon-2{
+    position: absolute;
+    transform: translateX(-345%) translateY(-60%);
+}
+
+.social-icon-3{
+    position: absolute;
+    transform: translateX(-330%) translateY(50%);
+
+}
+
+
+.big-circle:hover .social-icons {
+    opacity: 1;
+    font-size: 24px;
+}
+
+/* Style for the icon container */
+/* .social-icons {
+  position: absolute;
+
+}
+
+.social-icon {
+  margin: 5px; 
+  font-size: 24px; 
+  color: #ffffff; 
+  
+}
+
+.social-icon-1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateX(-220%);
+}
+
+.social-icon-2 {
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.social-icon-3 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+} */
 
 .mid-circle {
     width: 225px;
@@ -855,11 +931,12 @@ nav li {
 .contactus-form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Align items (including the button) horizontally in the center */
+    align-items: center;
+    /* Align items (including the button) horizontally in the center */
     text-align: left;
 }
 
-form{
+form {
     width: 100%;
     display: flex;
     flex-direction: column;
