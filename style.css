@@ -580,8 +580,8 @@ nav li {
     flex-direction: column;
     transition:all  0.3s ease-in-out;
     position: absolute;
-    font-size: 1px;
-    opacity: 0;
+    font-size: 24px;
+    opacity: 1;
     /* top: 50%; */
     /* left: -20px;  */
     /* transform: translateY(-50%) translateX(-50%); */
@@ -596,17 +596,17 @@ nav li {
 
 .social-icon-1 {
     position: absolute;
-    transform: translateX(-280%) translateY(-190%);
+    transform: translateX(-300%) translateY(-200%);
 }
 
 .social-icon-2{
     position: absolute;
-    transform: translateX(-345%) translateY(-60%);
+    transform: translateX(-350%) translateY(-60%);
 }
 
 .social-icon-3{
     position: absolute;
-    transform: translateX(-330%) translateY(50%);
+    transform: translateX(-300%) translateY(100%);
 
 }
 
