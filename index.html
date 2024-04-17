@@ -669,9 +669,9 @@
 
     <div class="footer-bottom flex flex-dir-col flex-justify-center flex-align-center">
         <div class="copyright">
-            © Copyright | 2023
+            © Copyright | <span id="current-year"></span>
             <strong>
-                Flamingo Films Studio</strong>. All rights reserved
+                Phoenix Frame Studio</strong>. All rights reserved
         </div>
 
         <div class="credits">
@@ -680,6 +680,13 @@
             <!-- <a href="">Khushi</a> -->
         </div>
     </div>
+
+    <script>
+        // Year Changing Automation in Copyright Section
+
+        var currentYear = new Date().getFullYear();
+    document.getElementById("current-year").innerHTML = currentYear;
+    </script>
 
 
     <script>
